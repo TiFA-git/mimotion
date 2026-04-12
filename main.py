@@ -16,7 +16,7 @@ import requests
 class MiMotion():
     name = "小米运动"
 
-    def __init__(self, user, password, factor=1):
+    def __init__(self, user, password, factor=0.5):
         user, third_name = self.process_user(user)
         self.user = user
         self.third_name = third_name
